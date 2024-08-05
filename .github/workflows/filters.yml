@@ -1,0 +1,15 @@
+name: Filter
+
+on:
+   pull_request:
+     types:
+      - opened
+      - syncronised 
+     branches:
+       - master
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+     - run: echo " Run whenever PR is opened or syn"
